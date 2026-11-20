@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pavvana Sai Shree P E | CSE Student · AI, Data & Security</title>
+<meta name="description" content="Portfolio of Pavvana Sai Shree P E, B.Tech CSE (Fintech minor) student at VIT-AP building AI, data analytics and security projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap">
+<style>
+:root{--bg:#fffdf9;--bg2:#f5eee2;--card:#fff;--ink:#2b2623;--mute:#6a6055;--head:#2b2623;--teal:#8a5a2b;--line:#e6dccb;--btn:#2b2623;--btntxt:#fffdf9;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1c1815;--bg2:#26211c;--card:#2d2721;--ink:#ece4d8;--mute:#b3a798;--head:#f6efe4;--teal:#d9a86c;--line:#3d352c;--btn:#d9a86c;--btntxt:#1c1815}}
+:root[data-theme="dark"]{--bg:#1c1815;--bg2:#26211c;--card:#2d2721;--ink:#ece4d8;--mute:#b3a798;--head:#f6efe4;--teal:#d9a86c;--line:#3d352c;--btn:#d9a86c;--btntxt:#1c1815}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.65 Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+a{color:var(--teal)}a:hover{text-decoration:none}
+:focus-visible{outline:3px solid var(--teal);outline-offset:2px;border-radius:4px}
+.w{max-width:1040px;margin:0 auto;padding:0 22px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:11;background:var(--bg);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:60px;gap:12px}
+.logo{font-weight:700;color:var(--head);text-decoration:none;letter-spacing:.2px}
+nav{display:flex;gap:4px;align-items:center;overflow-x:auto}
+nav a{color:var(--mute);text-decoration:none;font-size:14px;padding:6px 10px;border-radius:6px;white-space:nowrap}
+nav a:hover{color:var(--head);background:var(--bg2)}
+#tg{border:1px solid var(--line);background:none;color:var(--ink);border-radius:8px;padding:5px 9px;cursor:pointer;font-size:14px}
+section{padding:68px 0}
+section.alt{background:var(--bg2)}
+.eyebrow{color:var(--teal);font-weight:600;font-size:13px;letter-spacing:1.4px;text-transform:uppercase;margin:0 0 8px}
+h1,h2,h3{color:var(--head);line-height:1.2;margin:0}h1,h2{font-family:"Playfair Display",Georgia,"Times New Roman",serif;font-weight:600}
+h1{font-size:clamp(34px,6vw,56px);letter-spacing:-1px}
+h2{font-size:clamp(26px,4vw,34px);margin-bottom:26px;letter-spacing:-.5px}
+h3{font-size:18px}
+.hero{padding:84px 0 60px}
+.lead{font-size:clamp(17px,2.2vw,20px);color:var(--mute);max-width:680px;margin:18px 0 26px}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:26px}
+.btn{display:inline-block;padding:11px 20px;border-radius:9px;font-weight:600;text-decoration:none;border:1px solid var(--btn);font-size:15px}
+.btn.p{background:var(--btn);color:var(--btntxt)}.btn.s{color:var(--head);background:none;border-color:var(--line)}
+.btn:hover{transform:translateY(-1px)}
+.social{display:flex;gap:18px;font-size:14px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px;margin-top:44px}
+.stat{border:1px solid var(--line);border-radius:12px;padding:16px 18px;background:var(--card)}
+.stat b{display:block;font-size:24px;color:var(--head)}.stat span{color:var(--mute);font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.card{border:1px solid var(--line);border-radius:14px;background:var(--card);padding:22px;transition:box-shadow .2s,transform .2s}
+.card:hover{box-shadow:0 8px 24px rgba(60,40,20,.10);transform:translateY(-2px)}
+.tag{display:inline-block;font-size:12.5px;color:var(--teal);border:1px solid var(--line);border-radius:99px;padding:2px 10px;margin:0 6px 6px 0}
+.sub{color:var(--mute);font-size:14px;margin:4px 0 12px}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.filters button{font:inherit;font-size:14px;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:6px 14px;border-radius:99px;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--btn);color:var(--btntxt);border-color:var(--btn)}
+details{margin-top:14px;border-top:1px solid var(--line);padding-top:12px}
+summary{cursor:pointer;font-weight:600;color:var(--head)}
+.cs h4{margin:14px 0 2px;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:var(--teal)}
+.cs p,.cs ul{margin:0;color:var(--ink);font-size:15px}.cs ul{padding-left:18px}
+.links{margin-top:14px;display:flex;gap:16px;font-size:14px;font-weight:600}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.tl{border-left:2px solid var(--line);margin-left:6px;padding-left:22px}
+.tl .it{position:relative;margin-bottom:26px}
+.tl .it::before{content:"";position:absolute;left:-29px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--teal);border:2px solid var(--bg)}
+.tl .when{font-size:13px;color:var(--mute)}
+.tl ul{margin:6px 0 0;padding-left:18px;color:var(--ink)}
+form{display:grid;gap:14px;max-width:560px}
+label{font-weight:600;font-size:14px;color:var(--head)}
+input,textarea{width:100%;font:inherit;padding:11px 13px;border-radius:9px;border:1px solid var(--line);background:var(--card);color:var(--ink);margin-top:5px}
+.err{color:#c0392b;font-size:13px;min-height:16px;display:block}
+:root[data-theme="dark"] .err{color:#ff8a80}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .err{color:#ff8a80}}
+#st{font-size:14px;color:var(--mute)}
+footer{border-top:1px solid var(--line);padding:26px 0;color:var(--mute);font-size:14px}
+.rv{opacity:0;transform:translateY(14px);transition:opacity .6s,transform .6s}.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rv{opacity:1;transform:none;transition:none}.card,.btn{transition:none}}
+@media (max-width:640px){.logo{display:none}nav{width:100%}section{padding:52px 0}}
+</style>
+</head>
+<body>
+<header><div class="w nav">
+<a class="logo" href="#top">Pavvana Sai Shree</a>
+<nav aria-label="Main"><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#contact">Contact</a><button id="tg" aria-label="Toggle light and dark theme">◐</button></nav>
+</div></header>
+
+<main id="top">
+<section class="hero alt"><div class="w">
+<p class="eyebrow">B.Tech CSE · Fintech minor · VIT-AP</p>
+<h1>Pavvana Sai Shree P E</h1>
+<p class="lead">I build AI, data and security projects for finance and health, and I care about systems people can trust and understand.</p>
+<div class="btns"><a class="btn p" href="#projects">View projects</a><a class="btn s" href="Pavvana_Sai_Shree_Resume.pdf" download>Download resume</a><a class="btn s" href="#contact">Contact me</a></div>
+<div class="social"><a href="https://github.com/PEPSS2007" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/pavvana-sai-shree-p-e-436356367/" rel="noopener">LinkedIn</a><a href="mailto:pavvanasaishree@gmail.com">Email</a></div>
+<div class="stats">
+<div class="stat"><b>3rd of 150</b><span>teams at a hackathon</span></div>
+<div class="stat"><b>SIH Round 3</b><span>Smart India Hackathon qualifier</span></div>
+<div class="stat"><b>5 agents</b><span>in my FinGuard AI system</span></div>
+<div class="stat"><b>8.9 CGPA</b><span>B.Tech CSE, VIT-AP</span></div>
+</div>
+</div></section>
+
+<section id="about"><div class="w rv">
+<p class="eyebrow">About</p><h2>Data that is understood and protected</h2>
+<p style="max-width:720px">I’m a second-year Computer Science student at VIT-AP with a minor in Fintech. I’m drawn to problems where data has to be both understood and protected, which is why my projects combine analytics, AI agents and security. I work through a problem by defining who it affects, building a working version, and then testing where it breaks. I also lead the Women Innovators Network (WIN) at VIT-AP, where I organise workshops and speaker sessions that connect technical skills with entrepreneurship.</p>
+</div></section>
+
+<section id="projects" class="alt"><div class="w">
+<p class="eyebrow">Projects</p><h2>Selected work</h2>
+<div class="filters" role="group" aria-label="Filter projects">
+<button aria-pressed="true" data-f="all">All</button><button aria-pressed="false" data-f="ai">AI</button><button aria-pressed="false" data-f="security">Security</button><button aria-pressed="false" data-f="data">Data</button><button aria-pressed="false" data-f="health">Health</button>
+</div>
+<div class="grid">
+
+<article class="card rv" data-t="ai data">
+<h3>FinGuard AI</h3><p class="sub">Multi-agent financial advisory system</p>
+<span class="tag">Python</span><span class="tag">LLM APIs</span><span class="tag">Jupyter</span>
+<p>Five specialised agents coordinate to give financial guidance, with logic that keeps advice neutral across income and gender.</p>
+<details class="cs"><summary>Case study</summary>
+<h4>Problem</h4><p>Mainstream financial apps can give advice that varies with who the user is, and they rarely explain it.</p>
+<h4>Solution</h4><p>Risk, Portfolio, Ethical Investment, Reporting and Personal Finance Mentor agents, orchestrated so each recommendation stays modular and explainable.</p>
+<h4>Highlights</h4><ul><li>5 specialised agents</li><li>Bias-prevention logic for income-neutral and gender-neutral advice</li></ul></details>
+<div class="links"><a href="https://github.com/PEPSS2007/Finguard-AI-Agents" rel="noopener">GitHub</a></div>
+</article>
+
+<article class="card rv" data-t="security">
+<h3>Cyber Kavach</h3><p class="sub">Off-grid emergency alert device</p>
+<span class="tag">ESP32</span><span class="tag">LoRa 433 MHz</span><span class="tag">HMAC-SHA256</span>
+<p>A portable device that sends GPS-tagged distress signals without internet or mobile coverage, with authenticated messages.</p>
+<details class="cs"><summary>Case study</summary>
+<h4>Problem</h4><p>Emergency alerts usually depend on internet or cellular networks, which may not exist where help is needed.</p>
+<h4>Solution</h4><p>An ESP32 with a LoRa transceiver transmits GPS-tagged signals over a 433 MHz link. Every message is authenticated with HMAC-SHA256 and protected against replay attacks.</p>
+<h4>Highlights</h4><ul><li>Works with no internet or cellular connection</li><li>Tamper resistance and replay-attack prevention</li><li>Designed for low-power, field-deployable use</li></ul></details>
+</article>
+
+<article class="card rv" data-t="security health">
+<h3>MediCare Guardian (EverWell)</h3><p class="sub">Voice-first medication companion for seniors</p>
+<span class="tag">JavaScript</span><span class="tag">PWA</span><span class="tag">Firebase</span><span class="tag">Gemini API</span>
+<p>A Progressive Web App where elderly users log medications and symptoms by speaking, with encrypted, offline-capable storage.</p>
+<details class="cs"><summary>Case study</summary>
+<h4>Problem</h4><p>Many elderly users struggle with typing and complex interfaces, yet need to track medicines reliably.</p>
+<h4>Solution</h4><p>Voice logging through browser speech APIs, AES-GCM encryption for on-device health data, Firebase sync and a Gemini-powered health chatbot.</p>
+<h4>Highlights</h4><ul><li>No typing required</li><li>Accessibility-first interface and offline use</li></ul></details>
+<div class="links"><a href="https://github.com/PEPSS2007/medicare-guardian" rel="noopener">GitHub</a></div>
+</article>
+
+<article class="card rv" data-t="data">
+<h3>Data Analytics Internship Portfolio</h3><p class="sub">ApexPlanet, four end-to-end projects</p>
+<span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">SciPy</span><span class="tag">Matplotlib</span>
+<p>Cleaning, exploratory analysis, a KPI dashboard and data storytelling with statistical validation.</p>
+<details class="cs"><summary>Case study</summary>
+<h4>Workflow</h4><ul><li>Task 1: data cleaning and preprocessing</li><li>Task 2: exploratory data analysis</li><li>Task 3: deep-dive analysis and KPI dashboard</li><li>Task 4: storytelling with an independent-sample t-test</li></ul></details>
+<div class="links"><a href="https://github.com/PEPSS2007/Pavvana-DataAnalytics-Internship-Portfolio" rel="noopener">GitHub</a></div>
+</article>
+
+<article class="card rv" data-t="ai data">
+<h3>GrievanceTriage</h3><p class="sub">Municipal grievance triage and resolution platform</p>
+<span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">Supabase</span><span class="tag">Leaflet</span><span class="tag">Gemini API</span>
+<p>Takes citizen complaints from several channels, triages them with AI and rules, plots them on a map, and tracks each one to verified resolution.</p>
+<details class="cs"><summary>Case study</summary>
+<h4>Problem</h4><p>Municipal bodies receive complaints through many channels and must route them to the right department, spot emergencies, and confirm that the work was actually done.</p>
+<h4>Solution</h4><p>A triage pipeline redacts personal data, flags prompt-injection attempts, then applies rules and an LLM with a fallback, labelling every result as ai, fallback or rules. Uploaded photos get a vision analysis. Complaints appear on a Leaflet map, resolve to ward-level officer contacts, and move through a multi-stage resolution workflow with an audit trail.</p>
+<h4>Highlights</h4><ul><li>4 intake channels: citizen portal, officer entry, bulk CSV, secure webhook</li><li>7-stage lifecycle from Submitted to Resolved or Reopened</li><li>Audit event recorded for every administrative action</li><li>57 test assertions across 11 suites, per the project README</li><li>Runs in a demo mode with seeded sample data</li></ul></details>
+</article>
+
+<article class="card rv" data-t="ai">
+<h3>Railyug</h3><p class="sub">Railway journey assistant · IMPACTX 2026</p>
+<span class="tag">Risk modelling</span><span class="tag">Simulation</span><span class="tag">Accessibility</span>
+<p>A concept and work plan for IMPACTX 2026 Challenge 01 (Reimagining Railway Travel) that treats a rail trip as a living plan and re-plans when things go wrong.</p>
+<details class="cs"><summary>Case study</summary>
+<h4>Problem</h4><p>Separate tickets for separate legs carry no guarantee that both confirm, so a traveller can be stranded when one leg confirms and the other doesn’t.</p>
+<h4>Solution</h4><p>Itineraries are ranked by risk-adjusted arrival with uncertainty ranges. A waitlist estimator reports a confidence range with its sample size, and a dependency model compares keeping, cancelling or re-routing the first leg. Hard rules keep an older passenger and their caregiver together, and a Tatkal hold labels a seat “Processing” for 3 minutes so two people can’t hold it at once.</p>
+<h4>Highlights</h4><ul><li>Per-passenger connection feasibility and per-leg refund ledger</li><li>Keyboard and screen-reader support planned from the first screen</li><li>All data labelled simulated; bookings hand off to official railway channels</li></ul>
+<h4>Status</h4><p>Proposal and work plan stage.</p></details>
+</article>
+
+</div></div></section>
+
+<section id="skills"><div class="w">
+<p class="eyebrow">Skills</p><h2>Technical toolkit</h2>
+<div class="skills">
+<div class="card rv"><h3>Languages</h3><p class="sub">Programming</p><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">JavaScript</span><span class="tag">Java</span><span class="tag">C++</span></div>
+<div class="card rv"><h3>Data analytics</h3><p class="sub">Analysis and visualisation</p><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">SciPy</span><span class="tag">Matplotlib</span><span class="tag">Plotly</span><span class="tag">Streamlit</span><span class="tag">Excel</span></div>
+<div class="card rv"><h3>AI</h3><p class="sub">Applied AI</p><span class="tag">Multi-agent systems</span><span class="tag">Prompt engineering</span><span class="tag">NLP fundamentals</span></div>
+<div class="card rv"><h3>Security and DLT</h3><p class="sub">Applied cryptography</p><span class="tag">HMAC-SHA256</span><span class="tag">AES-GCM</span><span class="tag">Hedera HCF</span><span class="tag">Hedera HCDA</span></div>
+<div class="card rv"><h3>Web and tools</h3><p class="sub">Building and shipping</p><span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">Tailwind CSS</span><span class="tag">Supabase</span><span class="tag">PWA</span><span class="tag">HTML</span><span class="tag">Firebase</span><span class="tag">Git/GitHub</span><span class="tag">Figma</span><span class="tag">Canva</span></div>
+<div class="card rv"><h3>IoT</h3><p class="sub">Embedded</p><span class="tag">ESP32</span><span class="tag">LoRa</span><span class="tag">Sensor integration</span></div>
+</div></div></section>
+
+<section id="experience" class="alt"><div class="w rv">
+<p class="eyebrow">Experience</p><h2>Experience and achievements</h2>
+<div class="tl">
+<div class="it"><div class="when">2025 – Present</div><h3>Vice President, Women Innovators Network (WIN), VIT-AP</h3><ul><li>Lead a campus network for women in technology and innovation.</li><li>Organise workshops, speaker sessions and collaborative projects.</li></ul></div>
+<div class="it"><div class="when">May 2026 – Jul 2026 · Remote</div><h3>Data Analyst Intern, ApexPlanet Software</h3><ul><li>Completed 4 end-to-end analytics projects in Python.</li><li>Validated findings with an independent-sample t-test and wrote business recommendations.</li></ul></div>
+<div class="it"><div class="when">Nov 2025 – Dec 2025 · Remote</div><h3>Marketing Intern, Elythra Edufyi Tech Solutions</h3><ul><li>Supported campaign planning and outreach across multiple channels.</li></ul></div>
+<div class="it"><div class="when">Hackathons</div><h3>3rd place among 150 teams · Smart India Hackathon Round 3</h3><ul><li>SIH team project “Sehchar” in the Health and Safety category.</li></ul></div>
+</div></div></section>
+
+<section id="education"><div class="w">
+<p class="eyebrow">Education</p><h2>Education and certifications</h2>
+<div class="grid">
+<div class="card rv"><h3>B.Tech, Computer Science &amp; Engineering</h3><p class="sub">Minor in Fintech · VIT-AP · 2025 – 2029</p><p>CGPA 8.9 / 10. Coursework: Data Structures, Financial Systems, AI/ML, Cryptography, Database Management.</p></div>
+<div class="card rv"><h3>Certifications</h3><ul style="padding-left:18px;margin:8px 0 0">
+<li>Hedera Certified Foundation (HCF)</li><li>Hedera Certified Developer Associate (HCDA)</li>
+<li>Google Cloud Gen AI Academy APAC 2026 (AI Agents track)</li><li>Google 5-Day AI Agents Intensive</li>
+<li>Infosys Springboard: Data Analysis with Python, Python Clean Coding, NLP, cloud and prompt engineering courses</li><li>MATLAB Onramp, MathWorks</li></ul></div>
+</div></div></section>
+
+<section id="contact" class="alt"><div class="w rv">
+<p class="eyebrow">Contact</p><h2>Let’s work together</h2>
+<p style="max-width:560px">I’m open to internships and collaborations in software, AI, data analytics and fintech. Send a message and it will open in your email app, or write to <a href="mailto:pavvanasaishree@gmail.com">pavvanasaishree@gmail.com</a>.</p>
+<form id="f" novalidate>
+<div><label for="n">Name</label><input id="n" autocomplete="name"><span class="err" id="en"></span></div>
+<div><label for="e">Email</label><input id="e" type="email" autocomplete="email"><span class="err" id="ee"></span></div>
+<div><label for="m">Message</label><textarea id="m" rows="5"></textarea><span class="err" id="em"></span></div>
+<div><button class="btn p" type="submit" style="cursor:pointer;font:inherit;font-weight:600">Send message</button> <span id="st" role="status"></span></div>
+</form>
+</div></section>
+</main>
+
+<footer><div class="w">© <span id="y"></span> Pavvana Sai Shree P E · Chennai, Tamil Nadu · <a href="https://github.com/PEPSS2007" rel="noopener">GitHub</a> · <a href="https://www.linkedin.com/in/pavvana-sai-shree-p-e-436356367/" rel="noopener">LinkedIn</a></div></footer>
+
+<script>
+(function(){
+var r=document.documentElement;
+document.getElementById('y').textContent=new Date().getFullYear();
+try{var t=localStorage.getItem('theme');if(t)r.setAttribute('data-theme',t)}catch(e){}
+document.getElementById('tg').onclick=function(){
+var dark=r.getAttribute('data-theme')==='dark'||(!r.getAttribute('data-theme')&&matchMedia('(prefers-color-scheme:dark)').matches);
+var n=dark?'light':'dark';r.setAttribute('data-theme',n);try{localStorage.setItem('theme',n)}catch(e){}};
+var bs=document.querySelectorAll('.filters button'),cs=document.querySelectorAll('#projects .card');
+bs.forEach(function(b){b.onclick=function(){
+bs.forEach(function(x){x.setAttribute('aria-pressed',x===b)});
+cs.forEach(function(c){c.style.display=(b.dataset.f==='all'||c.dataset.t.split(' ').indexOf(b.dataset.f)>-1)?'':'none'})}});
+var io=('IntersectionObserver' in window)?new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.08}):null;
+document.querySelectorAll('.rv').forEach(function(el){io?io.observe(el):el.classList.add('in')});
+var f=document.getElementById('f');
+f.onsubmit=function(ev){ev.preventDefault();
+var n=f.n.value.trim(),e=f.e.value.trim(),m=f.m.value.trim(),ok=true;
+function s(id,msg){document.getElementById(id).textContent=msg;if(msg)ok=false}
+s('en',n?'':'Please enter your name.');
+s('ee',/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e)?'':'Please enter a valid email address.');
+s('em',m.length>=10?'':'Please write at least 10 characters.');
+var st=document.getElementById('st');
+if(!ok){st.textContent='';return}
+st.textContent='Opening your email app…';
+location.href='mailto:pavvanasaishree@gmail.com?subject='+encodeURIComponent('Portfolio enquiry from '+n)+'&body='+encodeURIComponent(m+'\n\n'+n+' ('+e+')')};
+})();
+</script>
+</body>
+</html>
